@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.auth.LoginActivity">
+
+    <TextView
+        android:id="@+id/lb_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/welcome"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_30ssp"
+        app:layout_constraintBottom_toTopOf="@+id/lb_greeting"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/lb_greeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/hey"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20ssp"
+        app:layout_constraintBottom_toTopOf="@+id/til_email_id"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/lb_welcome" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_email_id"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/til_password"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tie_email_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:hint="@string/email_id" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_password"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_14sdp"
+        app:endIconMode="password_toggle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/til_email_id">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tie_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:hint="@string/password" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/lb_forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:textSize="@dimen/_12ssp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/forgot_password"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/til_password" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_45sdp"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/til_password"
+        app:layout_constraintVertical_bias="0.65" />
+
+    <TextView
+        android:id="@+id/lb_create_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/you_are_not_a_member_create_new"
+        android:textSize="@dimen/_12ssp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/guideline2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

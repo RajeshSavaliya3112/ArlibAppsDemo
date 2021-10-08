@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.details.DetailActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:contentInsetStart="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/lb_details_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/lb_details_strength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/strength"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintStart_toStartOf="@+id/lb_details_name"
+        app:layout_constraintTop_toBottomOf="@+id/lb_details_name" />
+
+    <TextView
+        android:id="@+id/lb_details_dose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/dose"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintStart_toStartOf="@+id/lb_details_strength"
+        app:layout_constraintTop_toBottomOf="@+id/lb_details_strength" />
+
+    <TextView
+        android:id="@+id/tv_details_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toTopOf="@+id/lb_details_name" />
+
+    <TextView
+        android:id="@+id/tv_details_strength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toStartOf="@+id/tv_details_name"
+        app:layout_constraintTop_toTopOf="@+id/lb_details_strength" />
+
+    <TextView
+        android:id="@+id/tvdetails_dose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toStartOf="@+id/tv_details_strength"
+        app:layout_constraintTop_toTopOf="@+id/lb_details_dose" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.4" />
+</androidx.constraintlayout.widget.ConstraintLayout>

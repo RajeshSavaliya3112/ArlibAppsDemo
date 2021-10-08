@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">ArlibDemo</string>
+
+    <string name="good_morning">Good Morning</string>
+    <string name="good_afternoon">Good Afternoon</string>
+    <string name="good_evening">Good Evening</string>
+    <string name="good_night">Good Night</string>
+    <string name="welcome">Welcome</string>
+    <string name="hey">Hey</string>
+    <string name="email_id">Email Id</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">Login</string>
+    <string name="you_are_not_a_member_create_new">You are not a member? Create New</string>
+    <string name="already_member_login">Already member? Login</string>
+
+    <string name="please_enter_email_id">Please Enter Email Id</string>
+    <string name="please_enter_valid_email_id">Please Enter valid Email Id</string>
+
+    <string name="please_enter_password">Please Enter Password</string>
+    <string name="username_and_password_wrong">Username or password is wrong</string>
+    <string name="register">Register</string>
+    <string name="strength">Strength</string>
+    <string name="name">Name</string>
+    <string name="dose">Dose</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>
