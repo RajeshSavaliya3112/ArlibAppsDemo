@@ -36,7 +36,7 @@ class AppDatabaseTest : TestCase() {
 
     @Test
     fun writeAndReadSpend() {
-        val authData = AuthEntity(1, "rajesh@gmail.com", "Rajesh@123")
+        val authData = AuthEntity(0, "rajesh@gmail.com", "Rajesh@123")
         dao.insertAll(authData)
         val auth = dao.getAll()
         assertThat(auth.contains(authData)).isTrue()
